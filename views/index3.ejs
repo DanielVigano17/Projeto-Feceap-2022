@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Calendario</title>
+
+   
+
+</head>
+<header>
+    
+</header>
+<body>  <img src="/images/Logo.png" alt="" class="img-logo">
+    <div class="menu-lateral">
+        <ul>
+            <li class="list active">
+                <a href="home">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/procurar">
+                    <span class="icon"><ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="title">Tarefas</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                    <span class="title">Configurações</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="/logout">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">Sair</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+<div class="body-calendar">
+
+    <button class="m-anterior"><ion-icon name="arrow-back-outline"></ion-icon>
+    </button>
+    <div class="container">
+        <div class="header-calendar">
+            <div class="mes">Janeiro</div>
+        </div>
+        <div class="d-semana">
+            <div class="d-semana">D</div>
+            <div class="d-semana">S</div>
+            <div class="d-semana">T</div>
+            <div class="d-semana">Q</div>
+            <div class="d-semana">Q</div>
+            <div class="d-semana">S</div>
+            <div class="d-semana">S</div>
+        </div>
+        <div class="dias">
+            
+   
+        </div>
+    </div>
+    <button class="m-posterior"><ion-icon name="arrow-forward-outline"></ion-icon>
+    </button>
+    
+</div>
+
+<form class="tarefa-menu esconder" action="/adicionar" method="post">
+
+    <div class="div-cancel">
+       <div class="cancel"> <img src="/images/cancel.png" alt=""></div>
+    
+    </div>
+    
+    <div class="div-add-title">
+    <div class="form__group field ">
+        <input required=""  class="form__field add-title" type="text" name="titulo">
+        <label class="form__label" for="name">Título da Tarefa</label>
+    </div>
+</div>
+    
+    <div class="div-add-horario">
+        <img src="/images/clock.png" alt="">
+        <div class="form__group field ">
+            <input required=""  class="form__field add-horario" type="time" name="horario">
+            <label class="form__label" for="name">Adiconar Horário</label>
+        </div>
+        
+        
+    </div>
+
+    <div class="div-add-desc">
+        <img src="/images/job-description.png" alt="">
+        <div class="form__group field ">
+            <input required=""  class="form__field add-desc" type="text" name="desc">
+            <label class="form__label" for="name">Adicionar Descrição</label>
+        </div>
+    </div>
+    <div class="icons-api">
+        <a href="https://www.uber.com/br/pt-br/s/d/kochab/?ad_id=617272361180&adg_id=139842103186&campaign_id=18092255756&cre=617272361180&dev=m&dev_m=&fi_id=&gclid=Cj0KCQjwk5ibBhDqARIsACzmgLRQfKPIo_-TLPpuBSl-eATknbccP4zDKvD-lxAsNO5FIbX7YhPi_IYaAlC6EALw_wcB&gclsrc=aw.ds&kw=uber&kwid=kwd-12633382&match=b&net=g&placement=&tar=&utm_campaign=CM2198943-search-google-brand_25_-99_BR-National_o-d_web_acq_cpc_pt_T1_Generic_BM_uber_kwd-12633382_617272361180_139842103186_b_m&utm_source=AdWords_Brand"><img src="/images/uber.png" alt=""></a>
+        <a href="https://www.whatsapp.com/?lang=pt_br"><img src="/images/whatsapp.png" alt=""></a>
+        <a href="https://mail.google.com/"><img src="/images/gmail.png" alt=""></a>
+    </div>
+    <div class="div-concluir">
+    <button class=" concluir add "> Concluir</button>
+    </div>
+    
+    
+    
+</form>
+
+<div class="error-data esconder">
+    <img src="/images/exclamation-mark.png" alt="">
+    <p>É preciso ter selecionado uma data para adicionar uma tarefa</p>
+</div>
+
+<button class="add add-tarefa">Adicionar</button>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+<script src="/scripts.js"></script>
+
+</html>
